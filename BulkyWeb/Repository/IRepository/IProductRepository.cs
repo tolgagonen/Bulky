@@ -5,8 +5,9 @@ using System.Text;
 
 namespace BulkyWeb.Repository.IRepository
 {
-    public interface ICategoryRepository : IRepository<Category>
+    public interface IProductRepository : IRepository<Product>
     {
-        void Update(Category obj);
+        void Save();
+        void Update(Product obj);
     }
 }
